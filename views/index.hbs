@@ -9,7 +9,7 @@
   <body>
     {{!> main page:  <!}}
 <div class ="container">
-   <div id="menu">
+   <div class="menu">
       <ul>
         <li><a href="#">Home</a></li>
         <li>|</li>
@@ -22,26 +22,25 @@
         <li><a href="#">Contacts</a></li>
       </ul>
     </div>
-        <div id="main">
-    {{!  <div id="sidebar">
-        <h2>Sidebar</h2>
-        <p><strong>Lorem Lipsum</strong> dolor sit amet, consectetuer adipiscing elit. <a href="#">Nullam pharetra</a> tempus nunc. Donec feugiat lorem nec odio. Mauris vitae nisi sed mi rhoncus ultrices.</p>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam pharetra tempus nunc. Donec feugiat lorem nec odio. Mauris vitae nisi sed mi rhoncus ultrices.</p>
-      </div>!}}
-      <div id="text" >
+        <div class="main">
+    
+      <div class="text" >
         <h1>Welcome to beast stuff</h1>
         <p>We gots monsters and things and all sorts of text piscing elit. Phasellus ornare condimentum sem. Nullam a eros. Vivamus vestibulum hendrerit arcu. Integer a orci. Morbi nonummy semper est</p>
         
-        <h1>Lorem ipsum</h1>
+
+        {{#each id}}
+    
+   
+        <h1>({{name}})Lorem ipsum</h1>{{beast image}} <h1>{{{type}}}Grrrrr</h1> 
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus ornare condimentum sem. Nullam a eros. Vivamus vestibulum hendrerit arcu. Integer a orci. Morbi nonummy semper est. </p>
         
-        <p>Fusce non magna sit amet enim suscipit feugiat. Fusce et leo. Maecenas massa libero, egestas sed, ultricies tempor, laoreet eget, nisl. Nunc eleifend, orci eu aliquet consequat, metus diam suscipit felis, in adipiscing sapien nisl vitae ipsum. Nunc dui ante, vestibulum eget, viverra sed, ullamcorper quis, est. Nullam varius nunc.</p>
+         {{{characteristics}}}
+        <p>Fusce non magna sit amet enim suscipit feugiat. Fusce et leo. Maecenas massa libero, egestas sed, ultricies tempor, laoreet eget, nisl. Nunc eleifend, orci eu aliquet consequat, metus diam suscipit felis, in adipiscing sapien nisl vitae ipsum. Nunc dui ante, vestibulum eget, viverra sed, ullamcorper quis, est. Nullam varius nunc.<p>
+        <h1>{{{MON}}}power level</h1>
       </div>
     </div>
-    <ul>
-    {{#each users}}
-      <li>{{name}} ({{email}})</li>
-    {{/each}}
-    </ul>
+     {{/each}}
+    
   </body>
 </html>
