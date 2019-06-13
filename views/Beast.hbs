@@ -23,13 +23,14 @@
       </ul>
     </div>
         <div id="main">
-    {{!  <div id="sidebar">
+    <div id="sidebar">
         <h2>Sidebar</h2>
-        <p><strong>Lorem Lipsum</strong> dolor sit amet, consectetuer adipiscing elit. <a href="#">Nullam pharetra</a> tempus nunc. Donec feugiat lorem nec odio. Mauris vitae nisi sed mi rhoncus ultrices.</p>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam pharetra tempus nunc. Donec feugiat lorem nec odio. Mauris vitae nisi sed mi rhoncus ultrices.</p>
-      </div>!}}
+        <p>{{beast image}}</p>
+      </div>
       <div id="text" >
-        <h1>Welcome to beast stuff</h1>
+          {{#each users}}
+      <li>{{beast name}} {{beast description}})</li>
+          {{/each}}<h1>Welcome to beast stuff</h1>
         <p>We gots monsters and things and all sorts of text piscing elit. Phasellus ornare condimentum sem. Nullam a eros. Vivamus vestibulum hendrerit arcu. Integer a orci. Morbi nonummy semper est</p>
         
         <h1>Lorem ipsum</h1>
