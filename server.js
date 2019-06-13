@@ -1,9 +1,9 @@
 const express = require('express')
 const hbs = require('express-handlebars')
-
-const beastRoutes = require('./routes/users')
-
 const server = express()
+
+const beastRoutes = require('./routes/beasts')
+const homeRoute = require('./routes/home')
 
 // Middleware
 
@@ -13,6 +13,7 @@ server.use(express.urlencoded({ extended: true }))
 
 // Routes
 
-server.use('/', beastRoutes)
+server.use('/beasties', beastRoutes)
+server.use('/', homeRoute)
 
 module.exports = server
