@@ -9,7 +9,7 @@
   <body>
     {{!> main page:  <!}}
 <div class ="container">
-   <div id="menu">
+   <div class="menu">
       <ul>
         <li><a href="#">Home</a></li>
         <li>|</li>
@@ -22,27 +22,24 @@
         <li><a href="#">Contacts</a></li>
       </ul>
     </div>
-        <div id="main">
-    <div id="sidebar">
+        <div class="main">
+    <div class="sidebar">
         <h2>Sidebar</h2>
         <p>{{beast image}}</p>
       </div>
-      <div id="text" >
-          {{#each users}}
-      <li>{{beast name}} {{beast description}})</li>
-          {{/each}}<h1>Welcome to beast stuff</h1>
+      <div class="text" >
+          {{#each id}}
+      <li>{{{name}}}</li>
+          <h1>{{{type}}}Grrrrr</h1>
         <p>We gots monsters and things and all sorts of text piscing elit. Phasellus ornare condimentum sem. Nullam a eros. Vivamus vestibulum hendrerit arcu. Integer a orci. Morbi nonummy semper est</p>
         
-        <h1>Lorem ipsum</h1>
+        {{{characteristics}}}
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus ornare condimentum sem. Nullam a eros. Vivamus vestibulum hendrerit arcu. Integer a orci. Morbi nonummy semper est. </p>
         
+        <h1>{{{MON}}}power level</h1>
         <p>Fusce non magna sit amet enim suscipit feugiat. Fusce et leo. Maecenas massa libero, egestas sed, ultricies tempor, laoreet eget, nisl. Nunc eleifend, orci eu aliquet consequat, metus diam suscipit felis, in adipiscing sapien nisl vitae ipsum. Nunc dui ante, vestibulum eget, viverra sed, ullamcorper quis, est. Nullam varius nunc.</p>
       </div>
     </div>
-    <ul>
-    {{#each users}}
-      <li>{{name}} ({{email}})</li>
     {{/each}}
-    </ul>
   </body>
 </html>
