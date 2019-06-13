@@ -1,5 +1,6 @@
 const express = require('express')
 const hbs = require('express-handlebars')
+
 const server = express()
 
 const beastRoutes = require('./routes/beasts')
