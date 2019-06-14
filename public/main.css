@@ -1,0 +1,93 @@
+
+
+body {
+  background-color: rgb(30, 30, 30);
+  color: rgb(30, 30, 30);
+  font-family: 'Libre Baskerville', serif;
+  background-size: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1 {
+  font-size: 90px;
+  font-family: 'Seaweed Script', cursive;
+}
+
+h2, h3 {
+  display: inline-flex;
+}
+
+.menu {
+  display: inline-flex;
+  width: 50vw;
+}
+
+button {
+  border: none;
+  font-size: 40px;
+  font-family: 'Seaweed Script', cursive;
+  background-color: transparent;
+}
+
+a {
+  color:  rgb(30, 30, 30);
+  text-decoration: none;
+}
+
+a:hover {
+  color: gold;
+}
+
+.container {
+  width: calc(50vw - 40px);
+  height: 100vh;
+  float: right;
+}
+
+.indent {
+  margin-left: 40px;
+}
+
+.center {
+  margin: 0px auto;
+  text-align: center;
+  justify-content: center;
+}
+
+.nav {
+  width: 300px;
+}
+
+p {
+  padding: 0px 10px;
+}
+
+.text {
+  width: 45%;
+  float: left;
+}
+
+.beast-image {
+  width: 450px;
+  float: right;
+  margin-right: 20px;
+}
+
+.leftpage {
+  min-width: 49vw;
+  max-height: 100vh;
+  float: left;
+}
+
+.rightpage {
+  min-width: 49vw;
+  max-height: 100vh;
+  float: right;
+}
+
+.cover {
+  min-width: 50vw;
+  max-height: 100vh;
+  float: right;
+}

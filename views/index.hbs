@@ -1,46 +1,21 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Fantastic Beasts index</title>
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-    
-  </head>
-  <body>
-    {{!> main page:  <!}}
-<div class ="container">
-   <div class="menu">
-      <ul>
-        <li><a href="XXXXXX">Home</a></li>
-        <li>|</li>
-        <li><a href="XXXXXXX">Contents</a></li>
-        <li>|</li>
-        <li><a href="XXXXXXXXXX">Random Beast</a></li>
-        <li>|</li>
-        <li><a href="XXXXXXX">Submit Recently discovered</a></li>
-        <li>|</li>
-        <li><a href="XXXXXXXXXX">Contacts</a></li>
-      </ul>
-    </div>
-        <div class="main">
-    
-      <div class="text" >
-        <h1>Welcome to beast stuff</h1>
-        <p>We gots monsters and things and all sorts of text piscing elit. Phasellus ornare condimentum sem. Nullam a eros. Vivamus vestibulum hendrerit arcu. Integer a orci. Morbi nonummy semper est</p>
-        
+<div><img class="leftpage" src='/images/pages.jpg'></div>
+<div class="rightpage" style='background-image: url(/images/pages.jpg)'>
+  <div class="container">
 
-        {{#each id}}
-    
-   
-        <h1>({{name}})Lorem ipsum</h1>{{beast image}} <h1>{{{type}}}Grrrrr</h1> 
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus ornare condimentum sem. Nullam a eros. Vivamus vestibulum hendrerit arcu. Integer a orci. Morbi nonummy semper est. </p>
-        
-         {{{characteristics}}}
-        <p>Fusce non magna sit amet enim suscipit feugiat. Fusce et leo. Maecenas massa libero, egestas sed, ultricies tempor, laoreet eget, nisl. Nunc eleifend, orci eu aliquet consequat, metus diam suscipit felis, in adipiscing sapien nisl vitae ipsum. Nunc dui ante, vestibulum eget, viverra sed, ullamcorper quis, est. Nullam varius nunc.<p>
-        <h1>{{{MON}}}power level</h1>
-      </div>
+    {{> nav-bar}}
+
+    <div class="main indent">
+      <div style="padding: 100px 0px;"></div>
+      <h1>CODEX INDEX</h1>
+      <p>We gots monsters and things and all sorts of text piscing elit. Phasellus ornare condimentum sem. Nullam a
+        eros. Vivamus vestibulum hendrerit arcu. Integer a orci. Morbi nonummy semper est</p>
     </div>
-     {{/each}}
-    
-  </body>
-</html>
+    <div class="beast-list indent" style="float: left;">
+      {{#each beast}}
+      <a href="beasts/{{id}}">
+        <div style="width:450px; display: inline-flex">{{Name}}</div> ................................. Page {{id}}
+      </a><br>
+      {{/each}}
+    </div>
+  </div>
+</div>
