@@ -20,7 +20,7 @@ function getBeast (id, db = connection) {
 function editBeast (beast, id, db = connection) {
   return db('beasts')
     .update(beast)
-    .where('id', id )
+    .where('id', id)
 }
 
 function addBeast (user, db = connection) {
