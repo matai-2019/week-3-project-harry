@@ -1,16 +1,21 @@
-<div class="container">
+<div><img class="leftpage" src='/images/pages.jpg'></div>
+<div class="rightpage" style='background-image: url(/images/pages.jpg)'>
+  <div class="container">
 
-  {{> nav-bar}}
+    {{> nav-bar}}
 
-  <div class="main indent">
-    <div style="padding: 100px 0px;"></div>
-    <h1 >CODEX INDEX</h1>
+    <div class="main indent">
+      <div style="padding: 100px 0px;"></div>
+      <h1>CODEX INDEX</h1>
       <p>We gots monsters and things and all sorts of text piscing elit. Phasellus ornare condimentum sem. Nullam a
         eros. Vivamus vestibulum hendrerit arcu. Integer a orci. Morbi nonummy semper est</p>
-  </div>
-  <div class="beast-list indent" style="float: left;">
-    {{#each beast}}
-      <a href="beasties/{{id}}"> <div style="width:450px; display: inline-flex">{{name}}</div> ................................. Page {{id}}</a><br>
-    {{/each}}
+    </div>
+    <div class="beast-list indent" style="float: left;">
+      {{#each beast}}
+      <a href="beasts/{{id}}">
+        <div style="width:450px; display: inline-flex">{{Name}}</div> ................................. Page {{id}}
+      </a><br>
+      {{/each}}
+    </div>
   </div>
 </div>

@@ -1,4 +1,7 @@
+
+
 body {
+  background-color: rgb(30, 30, 30);
   color: rgb(30, 30, 30);
   font-family: 'Libre Baskerville', serif;
   background-size: 100%;
@@ -66,10 +69,25 @@ p {
 }
 
 .beast-image {
-  width: 45%;
+  width: 450px;
+  float: right;
+  margin-right: 20px;
+}
+
+.leftpage {
+  min-width: 49vw;
+  max-height: 100vh;
+  float: left;
+}
+
+.rightpage {
+  min-width: 49vw;
+  max-height: 100vh;
   float: right;
 }
 
-img {
-  max-width: 400px;
+.cover {
+  min-width: 50vw;
+  max-height: 100vh;
+  float: right;
 }

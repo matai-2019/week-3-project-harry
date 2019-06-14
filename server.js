@@ -18,7 +18,7 @@ server.use(express.static(path.join(__dirname, '/public')))
 
 // Routes
 
-server.use('/beasties', beastRoutes)
+server.use('/beasts', beastRoutes)
 server.use('/', homeRoute)
 
 module.exports = server

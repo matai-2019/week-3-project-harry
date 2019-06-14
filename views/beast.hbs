@@ -1,14 +1,21 @@
-<div class="container">
-  {{> nav-bar}}
-  <div class="main">
-    <h1 class="center">{{{name}}}</h1> <br>
-    <div class="text">
-      <h2>Type:</h2> <h3>{{type}}</h3> <br>
-      <h2>Personality:</h2> <h3>{{characteristics}}</h3> <br>
-      <h2>Minstry Classification: </h2> <h3>{{MOM}}</h3> <br>
-      <p>{{Desc}}</p>
+<div><img class="leftpage" src='/images/pages.jpg'></div>
+<div class="rightpage" style='background-image: url(/images/pages.jpg)'>
+  <div class="container">
+    {{> nav-bar}}
+    <div class="main">
+      <h1 class="center">{{{Name}}}</h1> <br>
+      <div class="text">
+        <h2>Type:</h2>
+        <h3>{{Type}}</h3> <br>
+        <h2>Personality:</h2>
+        <h3>{{Characteristics}}</h3> <br>
+        <h2>Minstry Classification: </h2>
+        <h3>{{MOM}}</h3> <br>
+        <p>{{Desc}}</p>
+      </div>
+      <div >
+        <img class="beast-image" src={{img_url}}>
+      </div>
     </div>
-    <div class="beast-image">
-      <img src={{URL}}>
+    <div>
     </div>
-  </div>

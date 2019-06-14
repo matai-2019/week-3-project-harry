@@ -4,9 +4,6 @@ const router = express.Router()
 const db = require('../db')
 
 router.get('/', (req, res) => {
-  // get server data
-  // then render data using view
-  // then catch error
   db.getBeasts()
     .then(beast => res.render('index', { beast }))
     .catch()
