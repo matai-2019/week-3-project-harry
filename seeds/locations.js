@@ -11,7 +11,7 @@ exports.seed = function (knex, Promise) {
 
         },
         {
-          id: 503, locations: 'In Ketes pants'
+          id: 503, locations: 'In the dream'
 
         },
         {
