@@ -3,24 +3,23 @@ exports.seed = function (knex, Promise) {
     .then(function () {
       return knex('locations').insert([
         {
-          id: 501, locations: 'Under the bed'
+          id: 501, location: 'Under the bed'
 
         },
         {
-          id: 502, locations: 'Global'
+          id: 502, location: 'Global'
 
         },
         {
-          id: 503, locations: 'In Ketes pants'
+          id: 503, location: 'In your dream'
 
         },
         {
-          id: 504, locations: 'Australia'
+          id: 504, location: 'Australia'
 
         },
         {
-          id: 505, locations: 'Antartica'
-
+          id: 505, location: 'Antartica'
         }
       ])
     })
