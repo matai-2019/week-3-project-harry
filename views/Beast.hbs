@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Fantastic Beasts index</title>
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-    
-  </head>
-  <body>
-    {{!> main page:  <!}}
-<div class ="container">
-   <div id="menu">
+
+<head>
+  <title>Fantastic Beasts</title>
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet" type>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  {{!> main page:  <!}}
+  <div class="container">
+    <div id="menu">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li>|</li>
-        <li><a href="#">Contents</a></li>
-        <li>|</li>
         <li><a href="#">Random Beast</a></li>
-        <li>|</li>
+        <br>
         <li><a href="#">Submit Recently discovered</a></li>
-        <li>|</li>
+        <br>
         <li><a href="#">Contacts</a></li>
       </ul>
     </div>
-        <div id="main">
-    <div id="sidebar">
+    <div id="main">
+      <div id="sidebar">
         <h2>Sidebar</h2>
         <p>{{beast image}}</p>
       </div>
-      <div id="text" >
-          {{#each users}}
-      <li>{{beast name}} {{beast description}})</li>
-          {{/each}}<h1>Welcome to beast stuff</h1>
-        <p>We gots monsters and things and all sorts of text piscing elit. Phasellus ornare condimentum sem. Nullam a eros. Vivamus vestibulum hendrerit arcu. Integer a orci. Morbi nonummy semper est</p>
-        
+      <div id="text">
+        {{#each users}}
+        <li>{{beast name}} {{beast description}})</li>
+        {{/each}}<h1>Welcome to beast stuff</h1>
+        <p>We gots monsters and things and all sorts of text piscing elit. Phasellus ornare condimentum sem. Nullam a
+          eros. Vivamus vestibulum hendrerit arcu. Integer a orci. Morbi nonummy semper est</p>
+
         <h1>Lorem ipsum</h1>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus ornare condimentum sem. Nullam a eros. Vivamus vestibulum hendrerit arcu. Integer a orci. Morbi nonummy semper est. </p>
-        
-        <p>Fusce non magna sit amet enim suscipit feugiat. Fusce et leo. Maecenas massa libero, egestas sed, ultricies tempor, laoreet eget, nisl. Nunc eleifend, orci eu aliquet consequat, metus diam suscipit felis, in adipiscing sapien nisl vitae ipsum. Nunc dui ante, vestibulum eget, viverra sed, ullamcorper quis, est. Nullam varius nunc.</p>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus ornare condimentum sem. Nullam a eros.
+          Vivamus vestibulum hendrerit arcu. Integer a orci. Morbi nonummy semper est. </p>
+
+        <p>Fusce non magna sit amet enim suscipit feugiat. Fusce et leo. Maecenas massa libero, egestas sed, ultricies
+          tempor, laoreet eget, nisl. Nunc eleifend, orci eu aliquet consequat, metus diam suscipit felis, in adipiscing
+          sapien nisl vitae ipsum. Nunc dui ante, vestibulum eget, viverra sed, ullamcorper quis, est. Nullam varius
+          nunc.</p>
       </div>
     </div>
-    <ul>
-    {{#each users}}
-      <li>{{name}} ({{email}})</li>
-    {{/each}}
-    </ul>
-  </body>
+</body>
+
 </html>

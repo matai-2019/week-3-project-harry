@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
   // get server data
   // then render data using view
   // then catch error
-  res.send('<h1> Index page <h1> <br> <a href="beasties/1"> Beast ID 1 </a> <br> <br> <a href="/add">Add</a>')
+  res.render('index')
 })
 
 router.get('/:id/edit', (req, res) => {
